@@ -1,3 +1,8 @@
+:root {
+    --bg-color: #606f5e; 
+    --good-border: #0e142f;
+}
+
 html {
     scrollbar-width: none;
 }
@@ -6,31 +11,41 @@ html {
     display: none;
 }
 
+[id] {
+    scroll-margin-top: 64px;
+}
+
+.nerd {
+    font-family: "FiraCode Nerd Font", monospace;
+    font-weight: bold;
+}
+
 body {
     padding: 0;
     margin: 0;
     height: 1000dvh;
     background-image: linear-gradient(to bottom left, #1b5157, #112543);
+
 }
 
 #navbar {
-    width: 100%;
-    background-color: #606f5e;
-    border-radius: 0 0 30px 30px;
+    width: 90%;
+    background-color: var(--bg-color);
+    border-radius: 30px;
     padding: 10px 0 10px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    font-family: "FiraCode Nerd Font", monospace;
-    font-weight: bold;
     position: sticky;
     top: 0;
-    
+    margin: 1% auto 0 auto;
+    scroll-margin-top: auto;
+    border: 1px solid var(--good-border);
 }
 
 .navbutton {
-    color: #606f5e;
+    color: var(--bg-color);
     text-decoration: none;
     background-color:  #0e142f;
     border-radius: 12px;
@@ -41,12 +56,44 @@ body {
 }
 
 .navbutton:hover {
-    color: #606f5e;
+    color: var(--bg-color);
 }
 
 .navbutton:focus {
     background-color: #0e142f;
-    color: #606f5e;
+    color: var(--bg-color);
     box-shadow: none;
 }
 
+#doublecontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4% 10% 3% 10%;
+}
+
+#doublecontainer>div {
+    border: 1px solid var(--good-border);
+    border-radius: 12px;
+    padding: 10px;
+    
+}
+
+#statement {
+    width: 55%;
+    background-color: var(--bg-color);
+    color:black;
+    font-size: larger;
+    
+}
+
+#links {
+    width: 35%;
+    background-color: var(--bg-color);
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
