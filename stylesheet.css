@@ -1,0 +1,41 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100dvh;
+    background-image: linear-gradient(to bottom right, #fcfa83, #2ea5b2, #2e63b2);
+}
+
+#navbar {
+    width: 100%;
+    background-color: #606f5e;
+    border-radius: 0 0 30px 30px;
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "FiraCode Nerd Font", monospace;
+    font-weight: bold;
+}
+
+.navbutton {
+    color: #606f5e;
+    text-decoration: none;
+    background-color:  #0e142f;
+    border-radius: 12px;
+    padding: 7px;
+    box-shadow: 2px 2px 5px 1px black;
+    
+    
+}
+
+.navbutton:hover {
+    color: #606f5e;
+}
+
+.navbutton:focus {
+    background-color: #0e142f;
+    color: #606f5e;
+    box-shadow: none;
+}
+
