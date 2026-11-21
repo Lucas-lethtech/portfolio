@@ -1,6 +1,6 @@
 :root {
     --bg-color: #606f5e; 
-    --good-border: #0e142f;
+    --good-border: #babbbd;
 }
 
 html {
@@ -96,4 +96,26 @@ body {
     justify-content: space-around;
     align-items: center;
 
+}
+
+#resume {
+    display: flex;
+    justify-content: center;
+}
+
+#resumeImg {
+    width: auto;
+    height: auto;
+    border: 4px solid black;
+    border-radius: 12px;
+}
+
+#downloadresume {
+    background-color: var(--bg-color);
+    height: fit-content;
+    border: 2px solid black;
+    margin-right: 20px;
+    margin-top: 3px;
+    padding: 10px;
+    border-radius: 50%;
 }
